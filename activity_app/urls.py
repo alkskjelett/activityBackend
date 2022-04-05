@@ -7,6 +7,7 @@ router.register('api/task', TaskViewSet, 'task')
 router.register('api/category', CategoryViewSet, 'category')
 router.register('api/question', QuestionViewSet, 'question')
 router.register('api/test', TestViewSet, 'test')
+router.register('api/answer', AnswerQuestionViewSet, 'answer')
 
 
 urlpatterns = router.urls

@@ -44,3 +44,11 @@ class TestViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend]
     filter_fields = ['task']
     # filterset_class = TestFilter
+
+
+class AnswerQuestionViewSet(viewsets.ModelViewSet):
+    queryset = AnswerQuestion.objects.all()
+    permission_classes = [
+        permissions.AllowAny
+    ]
+    serializer_class = AnswerQuestionSerializer

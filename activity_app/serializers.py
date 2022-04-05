@@ -37,3 +37,8 @@ class TestSerializer(serializers.ModelSerializer):
         fields = ['user', 'task']
 
 
+class AnswerQuestionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AnswerQuestion
+        fields = '__all__'
+
